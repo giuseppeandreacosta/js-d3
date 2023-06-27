@@ -73,6 +73,11 @@ for (let i = 0; i <= 15; i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numberX = 33
+let numberY = 12
+if (numberX === 8 || numberY === 8 || numberX + numberY === 8 || numberX - numberY === 8) {
+  console.log("uno dei casi si e' verificato")
+}
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
