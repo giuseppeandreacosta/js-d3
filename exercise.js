@@ -61,7 +61,11 @@ continue;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+for (let i = 0; i <= 15; i++) {
+  if (i % 2 === 0) {
+    console.log(i, "pari")
+  } else console.log(i, "dispari")
+}
 //ESERCIZI EXTRA NON OBBLIGATORI
 
 /* ESERCIZIO EXTRA 1
