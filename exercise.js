@@ -9,9 +9,9 @@
     let number2 = 35
 
     if ( number1 > number2 ) {  
-      console.log(`${number1} e' piu' grande di ${number2}`)
+      console.log("number1 è piu piccolo di number2")
   } else {
-    console.log(`${number2} e' piu' grande di ${number1}`)
+    console.log("number2 è più grande di number1")
   }
 
 
@@ -73,10 +73,12 @@ for (let i = 0; i <= 15; i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numberX = 33
-let numberY = 12
+let numberX = 15
+let numberY = 30
 if (numberX === 8 || numberY === 8 || numberX + numberY === 8 || numberX - numberY === 8) {
-  console.log("uno dei casi si e' verificato")
+  console.log(true);
+}else {
+  console.log(false);
 }
 
 /* ESERCIZIO EXTRA 2
@@ -86,6 +88,14 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 40;
+let shipping = 10;
+if (totalShoppingCart > 50) {
+  console.log(totalShoppingCart)
+} else {
+  console.log(totalShoppingCart + shipping)
+}
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -94,6 +104,12 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let cutOff = (totalShoppingCart * 20) / 100
+if (cutOff > 50) {
+  console.log()
+  }
+
+
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
@@ -101,7 +117,15 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let gender
+let isMale = true
+if (isMale) {
+  gender = "male"
+} else 
+  gender = "female"
 
+isMale ? (gender = "male") : (gender = "female")
+console.log(isMale)
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
